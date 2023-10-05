@@ -16,6 +16,9 @@
 		2A8E97D22ACE438800E57C64 /* myFirstAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E97D12ACE438800E57C64 /* myFirstAppUITestsLaunchTests.swift */; };
 		2A8E97DF2ACE44C200E57C64 /* CountrySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E97DE2ACE44C200E57C64 /* CountrySearchView.swift */; };
 		2A8E97E12ACE44D400E57C64 /* CountriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E97E02ACE44D400E57C64 /* CountriesView.swift */; };
+		2AE38E092ACF498A00FADD3F /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE38E082ACF498A00FADD3F /* CountryDetailView.swift */; };
+		2AE38E0C2ACF4A4100FADD3F /* CountriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE38E0B2ACF4A4100FADD3F /* CountriesModel.swift */; };
+		2AE38E0F2ACF4AF900FADD3F /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE38E0E2ACF4AF900FADD3F /* CountriesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		2A8E97D12ACE438800E57C64 /* myFirstAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFirstAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2A8E97DE2ACE44C200E57C64 /* CountrySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySearchView.swift; sourceTree = "<group>"; };
 		2A8E97E02ACE44D400E57C64 /* CountriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesView.swift; sourceTree = "<group>"; };
+		2AE38E082ACF498A00FADD3F /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
+		2AE38E0B2ACF4A4100FADD3F /* CountriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesModel.swift; sourceTree = "<group>"; };
+		2AE38E0E2ACF4AF900FADD3F /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,10 @@
 		2A8E97B22ACE438600E57C64 /* myFirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				2A8E97E92ACE4AAF00E57C64 /* CountriesSearch */,
+				2A8E97E62ACE4A1800E57C64 /* MainView */,
 				2A8E97B32ACE438600E57C64 /* myFirstAppApp.swift */,
-				2A8E97B52ACE438600E57C64 /* ContentView.swift */,
-				2A8E97DE2ACE44C200E57C64 /* CountrySearchView.swift */,
-				2A8E97E02ACE44D400E57C64 /* CountriesView.swift */,
+				2A8E97E22ACE483E00E57C64 /* Countries */,
 				2A8E97B72ACE438700E57C64 /* Assets.xcassets */,
 				2A8E97B92ACE438700E57C64 /* myFirstApp.entitlements */,
 				2A8E97BA2ACE438700E57C64 /* Preview Content */,
@@ -133,6 +139,105 @@
 				2A8E97D12ACE438800E57C64 /* myFirstAppUITestsLaunchTests.swift */,
 			);
 			path = myFirstAppUITests;
+			sourceTree = "<group>";
+		};
+		2A8E97E22ACE483E00E57C64 /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				2AE38E0D2ACF4AEA00FADD3F /* ViewModel */,
+				2AE38E0A2ACF4A0700FADD3F /* Model */,
+				2A8E97E82ACE4A7E00E57C64 /* View */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		2A8E97E62ACE4A1800E57C64 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				2A8E97EE2ACE4B0000E57C64 /* ViewModel */,
+				2A8E97ED2ACE4AF900E57C64 /* Model */,
+				2A8E97E72ACE4A3C00E57C64 /* View */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		2A8E97E72ACE4A3C00E57C64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A8E97B52ACE438600E57C64 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A8E97E82ACE4A7E00E57C64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A8E97E02ACE44D400E57C64 /* CountriesView.swift */,
+				2AE38E082ACF498A00FADD3F /* CountryDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A8E97E92ACE4AAF00E57C64 /* CountriesSearch */ = {
+			isa = PBXGroup;
+			children = (
+				2A8E97EC2ACE4AE800E57C64 /* ViewModel */,
+				2A8E97EB2ACE4AE100E57C64 /* Model */,
+				2A8E97EA2ACE4AD000E57C64 /* View */,
+			);
+			path = CountriesSearch;
+			sourceTree = "<group>";
+		};
+		2A8E97EA2ACE4AD000E57C64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A8E97DE2ACE44C200E57C64 /* CountrySearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A8E97EB2ACE4AE100E57C64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A8E97EC2ACE4AE800E57C64 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2A8E97ED2ACE4AF900E57C64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A8E97EE2ACE4B0000E57C64 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2AE38E0A2ACF4A0700FADD3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2AE38E0B2ACF4A4100FADD3F /* CountriesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2AE38E0D2ACF4AEA00FADD3F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2AE38E0E2ACF4AF900FADD3F /* CountriesViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,8 +372,11 @@
 			files = (
 				2A8E97DF2ACE44C200E57C64 /* CountrySearchView.swift in Sources */,
 				2A8E97E12ACE44D400E57C64 /* CountriesView.swift in Sources */,
+				2AE38E0F2ACF4AF900FADD3F /* CountriesViewModel.swift in Sources */,
 				2A8E97B62ACE438600E57C64 /* ContentView.swift in Sources */,
 				2A8E97B42ACE438600E57C64 /* myFirstAppApp.swift in Sources */,
+				2AE38E0C2ACF4A4100FADD3F /* CountriesModel.swift in Sources */,
+				2AE38E092ACF498A00FADD3F /* CountryDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
