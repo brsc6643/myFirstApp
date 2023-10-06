@@ -12,64 +12,49 @@ import SwiftUI
 struct CountriesView: View {
     @Environment(\.dismiss) var dismiss
     
-    @State var countries = [Country]()
-    @State var selectedCountry: Country?
-    @State var isLoading = false
     
-    @ObservedObject var viewModel = CountriesViewModel()
- 
+    @StateObject private var viewModel = CountriesViewModel()
+    
     var body: some View {
         NavigationView {
             //lecture notes
-            if isLoading {
+            if viewModel.isLoading {
                 Text("Loading...")
             }
             VStack {
                 Text("Please browse the world's countries below.")
- 
+                
                 Button("Press to dismiss") {
                     dismiss()
                 }
- 
-                List(countries) { country in
+                
+                List(viewModel.countries) { country in
                     VStack(alignment: .leading) {
                         Button(action: {
-                            selectedCountry = country // Set the selected country
+                            viewModel.selectedCountry = country // Set the selected country
                         }) {
                             Text("\(country.flag) \(country.name.common) \n Official Name: \(country.name.official)")
                         }
                     }
                 }
-                .task {
-                    print("Running task.")
-                    getAllCountries()
-                    print("Completed task.")
+                .sheet(item: $viewModel.selectedCountry) { country in
+                    CountryDetailView(country: country) // Display the detail view when a country is selected
+                    Button("Press to dismiss") {
+                        dismiss()
+                    }
                 }
-                if isLoading{
-                    ProgressView()
-                }
-                else {
-                    Text("Loading complete.").bold()
-                }
-            }
-            .sheet(item: $selectedCountry) { country in
-                CountryDetailView(country: country) // Display the detail view when a country is selected
-                Button("Press to dismiss") {
-                    dismiss()
-                }
-            }
-            .navigationTitle("Countries")
-            .toolbar {
-                            ToolbarItem(placement: .navigationBarTrailing) {
-                                NavigationLink(destination: CountrySearchView(countries: $countries)) {
-                                    Image(systemName: "magnifyingglass")
-                                }
-                            }
+                .navigationTitle("Countries")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        NavigationLink(destination: CountrySearchView(countries: $viewModel.countries)) {
+                            Image(systemName: "magnifyingglass")
                         }
+                    }
+                }
+            }
         }
     }
 }
-
 //func getLanguages(language: [String: String]) -> String {
 //    var availableLanguages = ""
 //    for (key, value) in language {

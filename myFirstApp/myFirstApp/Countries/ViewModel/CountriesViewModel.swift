@@ -10,8 +10,10 @@ import SwiftUI
 class CountriesViewModel:
     ObservableObject {
         
-        var countries = [Country]()
-        
+        @Published var countries = [Country]()
+        @Published var selectedCountry: Country?
+        @Published var isLoading = false
+    
         init(){
             getAllCountries()
         }

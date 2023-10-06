@@ -1,22 +1,5 @@
 import SwiftUI
 
-
-//lecture notes
-///
-///
-///
-struct Person: Codable {
-    var name: String
-}
-
-struct ClassRoom: Codable {
-    var classmates: [Person]
-    
-    var firstClassMate: Person {
-        return classmates[0]
-    }
-}
-
 struct ContentView: View {
     @State var switched: Bool = false
     @State private var showingSheet = false
@@ -99,6 +82,10 @@ struct ContentView: View {
                     CountriesView()
                 }
             }
+            
+// tabview Code
+            
+        
 //            TabView {
 //                LightModeView(colorScheme: $colorScheme)
 //                    .tabItem {
@@ -113,16 +100,6 @@ struct ContentView: View {
         }
     } //end body
 }
-
-//struct demotestApp: App {
-//       @AppStorage("isDarkMode") private var isDarkMode = false
-//        var body: some Scene {
-//                WindowGroup {
-//                 ContentView()
-//                .preferredColorScheme(isDarkMode ? .dark : .light)
-//       }
-//    }
-//}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

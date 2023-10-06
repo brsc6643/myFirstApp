@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A05512D2AD0A7ED006E29DF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05512C2AD0A7ED006E29DF /* SearchBar.swift */; };
+		2A05512F2AD0A82B006E29DF /* CountrySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05512E2AD0A82B006E29DF /* CountrySearchViewModel.swift */; };
 		2A8E97B42ACE438600E57C64 /* myFirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E97B32ACE438600E57C64 /* myFirstAppApp.swift */; };
 		2A8E97B62ACE438600E57C64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E97B52ACE438600E57C64 /* ContentView.swift */; };
 		2A8E97B82ACE438700E57C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8E97B72ACE438700E57C64 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A05512C2AD0A7ED006E29DF /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		2A05512E2AD0A82B006E29DF /* CountrySearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySearchViewModel.swift; sourceTree = "<group>"; };
 		2A8E97B02ACE438600E57C64 /* myFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8E97B32ACE438600E57C64 /* myFirstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFirstAppApp.swift; sourceTree = "<group>"; };
 		2A8E97B52ACE438600E57C64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,19 +158,9 @@
 		2A8E97E62ACE4A1800E57C64 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				2A8E97EE2ACE4B0000E57C64 /* ViewModel */,
-				2A8E97ED2ACE4AF900E57C64 /* Model */,
-				2A8E97E72ACE4A3C00E57C64 /* View */,
-			);
-			path = MainView;
-			sourceTree = "<group>";
-		};
-		2A8E97E72ACE4A3C00E57C64 /* View */ = {
-			isa = PBXGroup;
-			children = (
 				2A8E97B52ACE438600E57C64 /* ContentView.swift */,
 			);
-			path = View;
+			path = MainView;
 			sourceTree = "<group>";
 		};
 		2A8E97E82ACE4A7E00E57C64 /* View */ = {
@@ -192,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				2A8E97DE2ACE44C200E57C64 /* CountrySearchView.swift */,
+				2A05512C2AD0A7ED006E29DF /* SearchBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,20 +201,7 @@
 		2A8E97EC2ACE4AE800E57C64 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		2A8E97ED2ACE4AF900E57C64 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		2A8E97EE2ACE4B0000E57C64 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
+				2A05512E2AD0A82B006E29DF /* CountrySearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -371,10 +353,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A8E97DF2ACE44C200E57C64 /* CountrySearchView.swift in Sources */,
+				2A05512F2AD0A82B006E29DF /* CountrySearchViewModel.swift in Sources */,
 				2A8E97E12ACE44D400E57C64 /* CountriesView.swift in Sources */,
 				2AE38E0F2ACF4AF900FADD3F /* CountriesViewModel.swift in Sources */,
 				2A8E97B62ACE438600E57C64 /* ContentView.swift in Sources */,
 				2A8E97B42ACE438600E57C64 /* myFirstAppApp.swift in Sources */,
+				2A05512D2AD0A7ED006E29DF /* SearchBar.swift in Sources */,
 				2AE38E0C2ACF4A4100FADD3F /* CountriesModel.swift in Sources */,
 				2AE38E092ACF498A00FADD3F /* CountryDetailView.swift in Sources */,
 			);
