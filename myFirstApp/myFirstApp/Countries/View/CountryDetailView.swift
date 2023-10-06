@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CountryDetailView: View {
     let country: Country
- 
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Common Name: \(country.name.common)")
@@ -17,13 +17,8 @@ struct CountryDetailView: View {
             Text("Capital: \(country.capital?.joined(separator: ", ") ?? "N/A")")
             Text("Population: \(country.population)")
             Text(String("Car: \(country.car.side)"))
-//            if let currency = country.currencies {
-//                                    Text("Currency: \(currency.joined(separator: ", "))")
-//                                }
-//            Text(getLanguages(language: country.language!))
-//            Text("Translations: \(country.translations ?? "N/A")")
-            
+            Text(String("Languages: \(country.languages ?? [:]) "))
+                .navigationTitle("Country Details")
         }
-        .navigationTitle("Country Details")
     }
 }

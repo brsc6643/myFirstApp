@@ -19,9 +19,7 @@ struct Country: Codable, Identifiable {   //label the Country struct as codable 
     var capital: [String]?
     var flag: String
     var population: Int
-//    var currencies: [String]?
-//    var translations: Array<String>
-//    var language: [String: String]?
+    var languages: [String: String]?
     var car: Car
 }
 

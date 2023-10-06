@@ -25,7 +25,6 @@ struct CountrySearchView: View {
     }
    
     var body: some View {
-        NavigationView {
             VStack {
                 SearchBar(text: $searchText, placeholder: "Search Countries")
                
@@ -39,7 +38,6 @@ struct CountrySearchView: View {
                 }
             }
             .navigationTitle("Search Countries")
-        }
     }
 }
 
