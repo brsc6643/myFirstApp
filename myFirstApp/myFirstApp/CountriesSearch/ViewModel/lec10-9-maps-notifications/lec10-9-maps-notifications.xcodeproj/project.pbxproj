@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AD719C42AD486F500BC1A98 /* lec10_9_maps_notificationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD719C32AD486F500BC1A98 /* lec10_9_maps_notificationsApp.swift */; };
+		2AD719C62AD486F500BC1A98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD719C52AD486F500BC1A98 /* ContentView.swift */; };
+		2AD719C82AD486F700BC1A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD719C72AD486F700BC1A98 /* Assets.xcassets */; };
+		2AD719CC2AD486F700BC1A98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD719CB2AD486F700BC1A98 /* Preview Assets.xcassets */; };
+		2AD719D62AD486F700BC1A98 /* lec10_9_maps_notificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD719D52AD486F700BC1A98 /* lec10_9_maps_notificationsTests.swift */; };
+		2AD719E02AD486F700BC1A98 /* lec10_9_maps_notificationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD719DF2AD486F700BC1A98 /* lec10_9_maps_notificationsUITests.swift */; };
+		2AD719E22AD486F700BC1A98 /* lec10_9_maps_notificationsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD719E12AD486F700BC1A98 /* lec10_9_maps_notificationsUITestsLaunchTests.swift */; };
+		2AD719EF2AD4872500BC1A98 /* CountryMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD719EE2AD4872500BC1A98 /* CountryMapView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AD719D22AD486F700BC1A98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD719B82AD486F500BC1A98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AD719BF2AD486F500BC1A98;
+			remoteInfo = "lec10-9-maps-notifications";
+		};
+		2AD719DC2AD486F700BC1A98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD719B82AD486F500BC1A98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AD719BF2AD486F500BC1A98;
+			remoteInfo = "lec10-9-maps-notifications";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AD719C02AD486F500BC1A98 /* lec10-9-maps-notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lec10-9-maps-notifications.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD719C32AD486F500BC1A98 /* lec10_9_maps_notificationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lec10_9_maps_notificationsApp.swift; sourceTree = "<group>"; };
+		2AD719C52AD486F500BC1A98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2AD719C72AD486F700BC1A98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AD719C92AD486F700BC1A98 /* lec10_9_maps_notifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lec10_9_maps_notifications.entitlements; sourceTree = "<group>"; };
+		2AD719CB2AD486F700BC1A98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2AD719D12AD486F700BC1A98 /* lec10-9-maps-notificationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lec10-9-maps-notificationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD719D52AD486F700BC1A98 /* lec10_9_maps_notificationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lec10_9_maps_notificationsTests.swift; sourceTree = "<group>"; };
+		2AD719DB2AD486F700BC1A98 /* lec10-9-maps-notificationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lec10-9-maps-notificationsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD719DF2AD486F700BC1A98 /* lec10_9_maps_notificationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lec10_9_maps_notificationsUITests.swift; sourceTree = "<group>"; };
+		2AD719E12AD486F700BC1A98 /* lec10_9_maps_notificationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lec10_9_maps_notificationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2AD719EE2AD4872500BC1A98 /* CountryMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryMapView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AD719BD2AD486F500BC1A98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD719CE2AD486F700BC1A98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD719D82AD486F700BC1A98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AD719B72AD486F500BC1A98 = {
+			isa = PBXGroup;
+			children = (
+				2AD719C22AD486F500BC1A98 /* lec10-9-maps-notifications */,
+				2AD719D42AD486F700BC1A98 /* lec10-9-maps-notificationsTests */,
+				2AD719DE2AD486F700BC1A98 /* lec10-9-maps-notificationsUITests */,
+				2AD719C12AD486F500BC1A98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AD719C12AD486F500BC1A98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AD719C02AD486F500BC1A98 /* lec10-9-maps-notifications.app */,
+				2AD719D12AD486F700BC1A98 /* lec10-9-maps-notificationsTests.xctest */,
+				2AD719DB2AD486F700BC1A98 /* lec10-9-maps-notificationsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AD719C22AD486F500BC1A98 /* lec10-9-maps-notifications */ = {
+			isa = PBXGroup;
+			children = (
+				2AD719C32AD486F500BC1A98 /* lec10_9_maps_notificationsApp.swift */,
+				2AD719C52AD486F500BC1A98 /* ContentView.swift */,
+				2AD719EE2AD4872500BC1A98 /* CountryMapView.swift */,
+				2AD719C72AD486F700BC1A98 /* Assets.xcassets */,
+				2AD719C92AD486F700BC1A98 /* lec10_9_maps_notifications.entitlements */,
+				2AD719CA2AD486F700BC1A98 /* Preview Content */,
+			);
+			path = "lec10-9-maps-notifications";
+			sourceTree = "<group>";
+		};
+		2AD719CA2AD486F700BC1A98 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2AD719CB2AD486F700BC1A98 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2AD719D42AD486F700BC1A98 /* lec10-9-maps-notificationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AD719D52AD486F700BC1A98 /* lec10_9_maps_notificationsTests.swift */,
+			);
+			path = "lec10-9-maps-notificationsTests";
+			sourceTree = "<group>";
+		};
+		2AD719DE2AD486F700BC1A98 /* lec10-9-maps-notificationsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AD719DF2AD486F700BC1A98 /* lec10_9_maps_notificationsUITests.swift */,
+				2AD719E12AD486F700BC1A98 /* lec10_9_maps_notificationsUITestsLaunchTests.swift */,
+			);
+			path = "lec10-9-maps-notificationsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AD719BF2AD486F500BC1A98 /* lec10-9-maps-notifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AD719E52AD486F700BC1A98 /* Build configuration list for PBXNativeTarget "lec10-9-maps-notifications" */;
+			buildPhases = (
+				2AD719BC2AD486F500BC1A98 /* Sources */,
+				2AD719BD2AD486F500BC1A98 /* Frameworks */,
+				2AD719BE2AD486F500BC1A98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lec10-9-maps-notifications";
+			productName = "lec10-9-maps-notifications";
+			productReference = 2AD719C02AD486F500BC1A98 /* lec10-9-maps-notifications.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AD719D02AD486F700BC1A98 /* lec10-9-maps-notificationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AD719E82AD486F700BC1A98 /* Build configuration list for PBXNativeTarget "lec10-9-maps-notificationsTests" */;
+			buildPhases = (
+				2AD719CD2AD486F700BC1A98 /* Sources */,
+				2AD719CE2AD486F700BC1A98 /* Frameworks */,
+				2AD719CF2AD486F700BC1A98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AD719D32AD486F700BC1A98 /* PBXTargetDependency */,
+			);
+			name = "lec10-9-maps-notificationsTests";
+			productName = "lec10-9-maps-notificationsTests";
+			productReference = 2AD719D12AD486F700BC1A98 /* lec10-9-maps-notificationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AD719DA2AD486F700BC1A98 /* lec10-9-maps-notificationsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AD719EB2AD486F700BC1A98 /* Build configuration list for PBXNativeTarget "lec10-9-maps-notificationsUITests" */;
+			buildPhases = (
+				2AD719D72AD486F700BC1A98 /* Sources */,
+				2AD719D82AD486F700BC1A98 /* Frameworks */,
+				2AD719D92AD486F700BC1A98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AD719DD2AD486F700BC1A98 /* PBXTargetDependency */,
+			);
+			name = "lec10-9-maps-notificationsUITests";
+			productName = "lec10-9-maps-notificationsUITests";
+			productReference = 2AD719DB2AD486F700BC1A98 /* lec10-9-maps-notificationsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AD719B82AD486F500BC1A98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2AD719BF2AD486F500BC1A98 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					2AD719D02AD486F700BC1A98 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 2AD719BF2AD486F500BC1A98;
+					};
+					2AD719DA2AD486F700BC1A98 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 2AD719BF2AD486F500BC1A98;
+					};
+				};
+			};
+			buildConfigurationList = 2AD719BB2AD486F500BC1A98 /* Build configuration list for PBXProject "lec10-9-maps-notifications" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AD719B72AD486F500BC1A98;
+			productRefGroup = 2AD719C12AD486F500BC1A98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AD719BF2AD486F500BC1A98 /* lec10-9-maps-notifications */,
+				2AD719D02AD486F700BC1A98 /* lec10-9-maps-notificationsTests */,
+				2AD719DA2AD486F700BC1A98 /* lec10-9-maps-notificationsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AD719BE2AD486F500BC1A98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD719CC2AD486F700BC1A98 /* Preview Assets.xcassets in Resources */,
+				2AD719C82AD486F700BC1A98 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD719CF2AD486F700BC1A98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD719D92AD486F700BC1A98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AD719BC2AD486F500BC1A98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD719C62AD486F500BC1A98 /* ContentView.swift in Sources */,
+				2AD719C42AD486F500BC1A98 /* lec10_9_maps_notificationsApp.swift in Sources */,
+				2AD719EF2AD4872500BC1A98 /* CountryMapView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD719CD2AD486F700BC1A98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD719D62AD486F700BC1A98 /* lec10_9_maps_notificationsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD719D72AD486F700BC1A98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD719E22AD486F700BC1A98 /* lec10_9_maps_notificationsUITestsLaunchTests.swift in Sources */,
+				2AD719E02AD486F700BC1A98 /* lec10_9_maps_notificationsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AD719D32AD486F700BC1A98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AD719BF2AD486F500BC1A98 /* lec10-9-maps-notifications */;
+			targetProxy = 2AD719D22AD486F700BC1A98 /* PBXContainerItemProxy */;
+		};
+		2AD719DD2AD486F700BC1A98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AD719BF2AD486F500BC1A98 /* lec10-9-maps-notifications */;
+			targetProxy = 2AD719DC2AD486F700BC1A98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AD719E32AD486F700BC1A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2AD719E42AD486F700BC1A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2AD719E62AD486F700BC1A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "lec10-9-maps-notifications/lec10_9_maps_notifications.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lec10-9-maps-notifications/Preview Content\"";
+				DEVELOPMENT_TEAM = 6Z5W5X859A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cu.lec10-9-maps-notifications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AD719E72AD486F700BC1A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "lec10-9-maps-notifications/lec10_9_maps_notifications.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lec10-9-maps-notifications/Preview Content\"";
+				DEVELOPMENT_TEAM = 6Z5W5X859A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cu.lec10-9-maps-notifications";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2AD719E92AD486F700BC1A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z5W5X859A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cu.lec10-9-maps-notificationsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lec10-9-maps-notifications.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lec10-9-maps-notifications";
+			};
+			name = Debug;
+		};
+		2AD719EA2AD486F700BC1A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z5W5X859A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cu.lec10-9-maps-notificationsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lec10-9-maps-notifications.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lec10-9-maps-notifications";
+			};
+			name = Release;
+		};
+		2AD719EC2AD486F700BC1A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z5W5X859A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cu.lec10-9-maps-notificationsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lec10-9-maps-notifications";
+			};
+			name = Debug;
+		};
+		2AD719ED2AD486F700BC1A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Z5W5X859A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cu.lec10-9-maps-notificationsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lec10-9-maps-notifications";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AD719BB2AD486F500BC1A98 /* Build configuration list for PBXProject "lec10-9-maps-notifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD719E32AD486F700BC1A98 /* Debug */,
+				2AD719E42AD486F700BC1A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AD719E52AD486F700BC1A98 /* Build configuration list for PBXNativeTarget "lec10-9-maps-notifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD719E62AD486F700BC1A98 /* Debug */,
+				2AD719E72AD486F700BC1A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AD719E82AD486F700BC1A98 /* Build configuration list for PBXNativeTarget "lec10-9-maps-notificationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD719E92AD486F700BC1A98 /* Debug */,
+				2AD719EA2AD486F700BC1A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AD719EB2AD486F700BC1A98 /* Build configuration list for PBXNativeTarget "lec10-9-maps-notificationsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD719EC2AD486F700BC1A98 /* Debug */,
+				2AD719ED2AD486F700BC1A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AD719B82AD486F500BC1A98 /* Project object */;
+}

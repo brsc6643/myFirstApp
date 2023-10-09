@@ -12,6 +12,9 @@ struct CountryName: Codable {
     var official: String
 }
 
+struct CapitalInfo: Codable {
+    var latlng: [Double]?
+}
 struct Country: Codable, Identifiable {   //label the Country struct as codable and identifiable
     //identifiable labels must have an id variable
     var id: Int { return UUID().hashValue }
@@ -21,6 +24,7 @@ struct Country: Codable, Identifiable {   //label the Country struct as codable 
     var population: Int
     var languages: [String: String]?
     var car: Car
+    var capitalInfo: CapitalInfo
 }
 
 struct Car: Codable {
