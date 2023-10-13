@@ -23,9 +23,10 @@ struct ContentView: View {
 //                .navigationBarTitle("Home Page", displayMode: .inline)
 //            }
             MapView(tappedLocation: $tappedLocation)
-            if tappedLocation != nil {
-                LookAroundView(tappedLocation: $tappedLocation, showLookAroundView: $showLookAround).cornerRadius(20)
-            }
+//            if tappedLocation != nil{
+//                LookAroundView(tappedLocation: $tappedLocation, showLookAroundView: $showLookAround).cornerRadius(20)
+//                    .opacity(showLookAround ? 1: 0)
+            //}
             
             VStack {
                 HStack {
@@ -50,7 +51,7 @@ struct ContentView: View {
                 HStack {
                     Image(systemName: "globe.americas.fill")
                         .imageScale(.large)
-                    Text("CountryFinder")
+                    Text("GeoSearch")
                 }
                 .font(.title)
                 .foregroundColor(.accentColor)

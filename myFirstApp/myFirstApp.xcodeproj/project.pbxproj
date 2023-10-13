@@ -98,8 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				2A102DF12AD9916F00663FD8 /* LocationManager.swift */,
-				2A102DF32AD9924800663FD8 /* LookAroundView.swift */,
-				2A102DF52AD9949D00663FD8 /* MapView.swift */,
 				2A8E97B22ACE438600E57C64 /* myFirstApp */,
 				2A8E97C42ACE438800E57C64 /* myFirstAppTests */,
 				2A8E97CE2ACE438800E57C64 /* myFirstAppUITests */,
@@ -160,6 +158,8 @@
 		2AD719B42AD483DC00BC1A98 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A102DF32AD9924800663FD8 /* LookAroundView.swift */,
+				2A102DF52AD9949D00663FD8 /* MapView.swift */,
 				2A8E97E02ACE44D400E57C64 /* CountriesView.swift */,
 				2AE38E082ACF498A00FADD3F /* CountryDetailView.swift */,
 				2A8E97B52ACE438600E57C64 /* ContentView.swift */,
