@@ -1,10 +1,15 @@
 import SwiftUI
+import CoreLocation
 
 struct ContentView: View {
     @State var switched: Bool = false
     @State private var showingSheet = false
     @State private var showAlert = false
     @State private var searchpage = false
+    
+    @State private var tappedLocation: CLLocationCoordinate2D?
+    @State private var showLookAround = false
+    
     @AppStorage("isDarkMode") private var isDarkMode = false
     
     var body: some View {
@@ -17,6 +22,10 @@ struct ContentView: View {
 ////                }
 //                .navigationBarTitle("Home Page", displayMode: .inline)
 //            }
+            MapView(tappedLocation: $tappedLocation)
+            if tappedLocation != nil {
+                LookAroundView(tappedLocation: $tappedLocation, showLookAroundView: $showLookAround).cornerRadius(20)
+            }
             
             VStack {
                 HStack {
