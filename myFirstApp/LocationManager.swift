@@ -6,6 +6,7 @@
 //
 
 import CoreLocation
+import UIKit
 
 final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     private let locationManager = CLLocationManager()
@@ -27,4 +28,11 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
         
         userLocation = location.coordinate
     }
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let pushNotificationService = PushNotificationService()
+        pushNotificationService.requestPermissions()
+        return true
+    }
+    
 }

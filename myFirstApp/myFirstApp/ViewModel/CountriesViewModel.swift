@@ -29,6 +29,11 @@ class CountriesViewModel:
                     print(data) //print the data to see where we are
                     //use a try and catch block with JSONDecoder(),decode([JSONstruct].self, from: data to decode JSON above
                     countries = try JSONDecoder().decode([Country].self, from: data)
+                    //push implementation
+                    DispatchQueue.main.asyncAfter(deadline: .now()) {
+                        let notification = PushNotificationService()
+                        notification.scheduleNotification(title: "You dropped a pin!", subtitle: "Tap here to return to the map.")
+                    }
                 }
                 catch { //catch errors by outputting the appropriate error description
                     print("Error: \(error.localizedDescription)")

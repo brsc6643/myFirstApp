@@ -31,7 +31,12 @@ class PushNotificationService {
         
         let notificationRequest = UNNotificationRequest(identifier: UUID().uuidString, content: notificationContent, trigger: trigger)
         
-        UNUserNotificationCenter.current().add(notificationRequest)
+        
+        UNUserNotificationCenter.current().add(notificationRequest) { (error) in
+            if let error = error {
+                print("Error in push notification: \(error)")
+            }
+        }
     }
     
     func clearNotifications() {

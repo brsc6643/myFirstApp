@@ -32,6 +32,8 @@ struct CountriesView: View {
                     VStack(alignment: .leading) {
                         Button(action: {
                             viewModel.selectedCountry = country // Set the selected country
+                            let pushNotificationService = PushNotificationService()
+                            pushNotificationService.scheduleNotification(title: "Hello", subtitle: "World")
                         }) {
                             Text("\(country.flag) \(country.name.common) \n Official Name: \(country.name.official)")
                         }
@@ -42,6 +44,7 @@ struct CountriesView: View {
                     Button("Press to dismiss") {
                         dismiss()
                     }
+                    
                 }
                 .navigationTitle("Countries")
                 .toolbar {

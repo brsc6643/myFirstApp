@@ -57,7 +57,6 @@ final class MapViewCoordinator: NSObject, MKMapViewDelegate {
         guard let mapView = sender.view as? MKMapView else {return}
         
         let touchLocation = sender.location(in: sender.view)
-        
         let locationCoordinate = mapView.convert(touchLocation, toCoordinateFrom: sender.view)
         
         let annotation = MKPointAnnotation()
@@ -66,5 +65,11 @@ final class MapViewCoordinator: NSObject, MKMapViewDelegate {
         
         mapView.removeAnnotations(mapView.annotations)
         mapView.addAnnotation(annotation)
+        
+        //push implementations
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            let notification = PushNotificationService()
+            notification.scheduleNotification(title: "You dropped a pin!", subtitle: "Tap here to return to the map.")
+        }
     }
 }
